@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragments.MarketFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/closemarket"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/baseline_close_24"
+                        app:tint="@color/purple_500" />
+
+                    <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/button4">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/baseline_search_24" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="50dp"
+                        android:fontFamily="@font/helveticaneuecyr_medium"
+                        android:text="Начните вводить.." />
+                </FrameLayout>
+
+                </FrameLayout>
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    app:iss_auto_cycle="false"
+                    app:iss_corner_radius="100"
+                    app:iss_delay="0"
+                    app:iss_placeholder="@color/teal_700"
+                    app:iss_selected_dot="@drawable/dot1"
+                    app:iss_unselected_dot="@drawable/default_unselected_dot"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="15dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/helveticaneuecyr_medium"
+                            android:text="Продукты"
+                            android:textColor="@color/black"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:fontFamily="@font/helveticaneuecyr_medium"
+                            android:text="смотреть всё"
+                            android:textColor="@color/purple_500" />
+                    </FrameLayout>
+
+                    <HorizontalScrollView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="35dp"
+                        android:overScrollMode="never"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/textView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageViefsdfdsfsw15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product1" />
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="145 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textVfdsfsdiew24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Каша льняная Масляный король"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/textFDSFDSFSDView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageVfdsfdsiew15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product2" />
+
+                                <TextView
+                                    android:id="@+id/tefdsfsdfsxtView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="315 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textVvsfdsfsdiew24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Здоровый грибной перекус из «Шиитаке» Зеленика, 50 гр"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/texfdsfdstView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageVfdsfsdiew15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product3" />
+
+                                <TextView
+                                    android:id="@+id/textVifdaasdaew23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="169 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Печенье «Банан», безглютеновое Bite, 125 гр"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/tefdsfssxtView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imafdssadasgeView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product4" />
+
+                                <TextView
+                                    android:id="@+id/textfdsfdssdView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="270 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tefdsfsdxtView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Шоколадные батончики «Как Будда Сникерс»"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/textVdsadasiew25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imafdfsdfsdgeView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product5" />
+
+                                <TextView
+                                    android:id="@+id/textVsadasdaiew23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="210 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tefdsfsdfdsfsdxtView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Фруктовый здоровый перекус «Яблоко» Зеленика, 20 гр"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/helveticaneuecyr_medium"
+                        android:text="смотреть всё"
+                        android:textColor="@color/purple_700" />
+
+                    <TextView
+                        android:id="@+id/textViasdasew22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/helveticaneuecyr_medium"
+                        android:text="Товары для дома"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="35dp"
+                        android:overScrollMode="never"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/textVidasdasew25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imagehgdqView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product6" />
+
+                                <TextView
+                                    android:id="@+id/textVigfsfdaew23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="698 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/fsdfdsfstextView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Стиральный порошок Чистый кокос МиКо, 1 кг"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/textgsffdsfsdView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imagsdffdsfseView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product7" />
+
+                                <TextView
+                                    android:id="@+id/tsdfdsfsdextView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="353 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textVfsfdsfsiew24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Отбеливатель экологичный PURE WATER"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/teadqqxtView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imagefdsView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product8" />
+
+                                <TextView
+                                    android:id="@+id/tgfsfqextView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="510 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textVihdsdfew24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Экологичное средство для стирки Molecola"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/texraeqweqtView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageVihgdfgfssew15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product9" />
+
+                                <TextView
+                                    android:id="@+id/texfdsfdsftView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="245 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textVivfxvsdfsew24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Кондиционер-ополаскиватель Pure Water"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="100dp"
+                                android:layout_height="200dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp">
+
+                                <FrameLayout
+                                    android:id="@+id/gobut10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/button_registration">
+
+                                    <TextView
+                                        android:id="@+id/tfaqewqwextView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="В корзину"
+                                        android:textColor="@color/black" />
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/product10" />
+
+                                <TextView
+                                    android:id="@+id/textVgfgsdfdsiew23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="80dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="425 ₽"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tefdsfdsfsxtView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="100dp"
+                                    android:fontFamily="@font/helveticaneuecyr_medium"
+                                    android:text="Порошок для стирки белья «Универсальный» Freshbubble"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

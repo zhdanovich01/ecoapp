@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517712759413",
+    "project_id": "neweco-ef40f",
+    "storage_bucket": "neweco-ef40f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517712759413:android:eb44c65528bdf7dd0e063c",
+        "android_client_info": {
+          "package_name": "com.example.neweco"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAys27HHbtxCPCHeSsViVrxwO2fhlJc9iA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.BonusFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    app:tint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/basictext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Ведите свой ЭкоДневник, фиксируя все экологически ответственные действия за неделю. Расскажите, как вы сэкономили воду, энергию или сделали устойчивую покупку. Поделитесь своим опытом в соцсетях, отметив наш проект и получите бонусы"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/basictext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="ЭкоДневник"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    app:tint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/mail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Сделайте фотографию места, где вы собрали мусор. Загрузите ее в любую соцсеть и отметьте нас, и вам будут начислены бонусы за вклад в чистоту и порядок в вашем районе."
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Эко-Спасатель"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    app:tint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/basictext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Прочитайте две книги или статьи о проблемах экологии, устойчивом развитии или принципах &quot;zero waste&quot;. "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/basictext4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Эко-Читатель"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    app:tint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/basictext5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Посетите 5 магазинов, специализирующихся на продаже экологически чистых и устойчивых товаров"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/basictext6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Эко-Магазинный Марафон"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    app:tint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/basictext7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Организуйте эко-пикник в парке или на природе, минимизируя использование одноразовой упаковки и посуды. Загрузите фотографии вашего пикника, расскажите, как вы использовали устойчивые материалы, указав ссылки на наш проект"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/basictext8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Эко-Пикник"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    app:tint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/basictext9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Попробуйте использовать экологичные виды транспорта (велосипед, электросамокат, общественный транспорт) вместо личного автомобиля в течение недели. Зафиксируйте ваши поездки и поделитесь в соцсетях, отметив нас, как это повлияло на вашу экологическую нагрузку. Получите бонусы за участие в &quot;Эко-Транспортном&quot; челлендже."
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/basictext10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Эко-Транспорт"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/returnback2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:rotationY="-180"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:tint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/helveticaneuecyr_bold"
+        android:text="Бонусная программа"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/mail3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/helveticaneuecyr_medium"
+        android:text="Выполняйте задания и получайте баллы, которые можно обменивать на подарки"
+        android:textSize="11sp" />
+</FrameLayout>

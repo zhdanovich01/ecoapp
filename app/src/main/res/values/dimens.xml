@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_height">150dp</dimen>
+    <dimen name="expanded_height">350dp</dimen>
+    <dimen name="margin_top">50dp</dimen>
+    <dimen name="max_height">500dp</dimen>
+
+</resources>

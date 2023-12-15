@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativewithmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/testframe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.yandex.mapkit.mapview.MapView
+                    android:id="@+id/mapkit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </com.yandex.mapkit.mapview.MapView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/backblack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="@color/black">
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <com.example.neweco.logic.ExpandableView
+                android:id="@+id/expandableView"
+                android:layout_width="match_parent"
+
+                android:layout_height="300dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="50dp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/mygeo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/circle"
+                    android:padding="5dp"
+                    android:tint="@color/purple_500"
+                    app:srcCompat="@drawable/baseline_near_me_24" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button3">
+
+                    <FrameLayout
+                        android:id="@+id/scan3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button4">
+
+                        <ImageView
+                            android:id="@+id/imageVnvcxkvxlciew7"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="20dp"
+                            app:srcCompat="@drawable/baseline_qr_code_scanner_24"
+                            app:tint="@color/purple_500" />
+
+                        <ImageView
+                            android:id="@+id/imagkvcxvkxneView10"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10dp"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24"
+                            app:tint="#000000" />
+
+                        <TextView
+                            android:id="@+id/textVnvlcxvnlxciew16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="65dp"
+                            android:fontFamily="@font/helveticaneuecyr_medium"
+                            android:text="Определить упаковку"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:id="@+id/textVibvxvcafew17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/helveticaneuecyr_medium"
+                            android:text="Сервисы"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="5dp"
+                            android:overScrollMode="never"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:id="@+id/taxi2"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp">
+
+                                    <ImageView
+                                        android:id="@+id/imvadsadasageView11"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="-20dp"
+                                        app:srcCompat="@drawable/ecotaxi" />
+
+                                    <TextView
+                                        android:id="@+id/textVivcxvgfdgdfcxvxew18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="Экотакси"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/gomarket"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imagfddsadsaeView11"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="-20dp"
+                                        app:srcCompat="@drawable/market" />
+
+                                    <TextView
+                                        android:id="@+id/tegdfxjopjfpdsjtView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="Маркет"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/rent"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imaojvojcxvcxgeView11"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="-20dp"
+                                        app:srcCompat="@drawable/rent3" />
+
+                                    <TextView
+                                        android:id="@+id/textVpjvocxjvcxoiew18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:text="Аренда"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="205dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tevlnxcvlcxxtView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/helveticaneuecyr_medium"
+                            android:text="Выбор горожан"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:overScrollMode="never"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="105dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageVlvncvlxiew11"
+                                        android:layout_width="60dp"
+                                        android:layout_height="75dp"
+                                        android:layout_gravity="center|top"
+                                        app:srcCompat="@drawable/moveglass" />
+
+                                    <TextView
+                                        android:id="@+id/tnvxclvncxvlxextView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:gravity="center"
+                                        android:text="Cдать стекло"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="80dp"
+                                    android:layout_height="105dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewqeqqw11"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="10dp"
+                                        app:srcCompat="@drawable/localeat" />
+
+                                    <TextView
+                                        android:id="@+id/textxcvcxvxView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:gravity="center"
+                                        android:text="Mестные продукты"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="105dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageVielvcxlvxcw11"
+                                        android:layout_width="60dp"
+                                        android:layout_height="80dp"
+                                        android:layout_gravity="center|top"
+                                        app:srcCompat="@drawable/movetheplastic" />
+
+                                    <TextView
+                                        android:id="@+id/texvxvcxvxctView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:gravity="center"
+                                        android:text="Cдать пластик"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="105dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imagenkeqwView11"
+                                        android:layout_width="50dp"
+                                        android:layout_height="70dp"
+                                        android:layout_gravity="center|top"
+                                        app:srcCompat="@drawable/movethetechnik" />
+
+                                    <TextView
+                                        android:id="@+id/texvxcvxctView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:gravity="center"
+                                        android:text="Cдать технику"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="105dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageVifsdmfsdojew11"
+                                        android:layout_width="50dp"
+                                        android:layout_height="70dp"
+                                        android:layout_gravity="center|top"
+                                        app:srcCompat="@drawable/goodrest" />
+
+                                    <TextView
+                                        android:id="@+id/textfddadaView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:fontFamily="@font/helveticaneuecyr_medium"
+                                        android:gravity="center"
+                                        android:text="Полезные заведения"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+                                </FrameLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="350dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:id="@+id/textVjvoxocxciew17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/helveticaneuecyr_medium"
+                            android:text="Рекомендации"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="30dp"
+                            android:overScrollMode="never"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button4">
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView16"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/button4"
+                                            android:clipToOutline="true"
+                                            app:srcCompat="@drawable/post1" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button4">
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView17"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/button4"
+                                            android:clipToOutline="true"
+                                            app:srcCompat="@drawable/post2" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button4">
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView18"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/button4"
+                                            android:clipToOutline="true"
+                                            app:srcCompat="@drawable/post3" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button4">
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView20"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/button4"
+                                            android:clipToOutline="true"
+                                            app:srcCompat="@drawable/post4" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button4">
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView21"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/button4"
+                                            android:clipToOutline="true"
+                                            app:srcCompat="@drawable/post5" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button4">
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView22"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/button4"
+                                            android:clipToOutline="true"
+                                            app:srcCompat="@drawable/post6" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </FrameLayout>
+                </FrameLayout>
+
+            </com.example.neweco.logic.ExpandableView>
+
+
+            <ImageView
+                android:id="@+id/imageViewBARBACK"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:src="#57000000"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageViewBAR1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/btnOpenDrawer"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_baseline_menu_24"
+                app:tint="@color/purple_500" />
+
+
+            <FrameLayout
+                android:id="@+id/allframes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="gone">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/reglog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/splashscreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff">
+
+        <!-- Содержимое бокового меню здесь -->
+
+        <LinearLayout
+            android:id="@+id/someframe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/logo" />
+
+
+                <TextView
+                    android:id="@+id/nameinmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/emailinmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="@font/helveticaneuecyr_medium"
+                    android:text="Email"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bonus"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="-10dp">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+                    android:text="Бонусы"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/favourites"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="Любимые места"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="Ваши избранные пункты/магазины"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="История заказов"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="Настройки"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="О приложении"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/supportbut"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="Поддержка"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/politics"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="Политика конфиденциальности"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/rank"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/helveticaneuecyr_roman"
+
+                    android:text="Оценить приложение"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
